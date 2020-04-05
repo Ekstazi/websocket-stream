@@ -1,0 +1,46 @@
+{
+  "name": "ekstazi/websocket-stream-client",
+  "description": "Async WebSocket stream client interface for Amp based on different implementations.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Maxim Furtuna",
+      "email": "ekstazyst@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ekstazi/websocket-stream-client/issues"
+  },
+  "keywords": [
+    "async",
+    "non-blocking",
+    "websocket",
+    "client",
+    "stream",
+    "http",
+    "amp",
+    "amphp"
+  ],
+  "require": {
+    "php": ">=7.2",
+    "amphp/amp": "^2.2",
+    "amphp/byte-stream": "^1",
+    "psr/http-message": "^1"
+  },
+  "require-dev": {
+    "amphp/php-cs-fixer-config": "dev-master"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "ekstazi\\websocket\\stream\\": "src"
+    }
+  },
+  "suggest": {
+    "ekstazi/websocket-stream-client-implementation": "For websocket client implementation",
+    "ekstazi/websocket-stream-client-amphp": "For amphp websocket-client stream"
+  },
+  "scripts": {
+    "lint": "php vendor/bin/php-cs-fixer --diff  -v fix"
+  }
+}
