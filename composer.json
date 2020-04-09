@@ -25,7 +25,8 @@
     "php": ">=7.2",
     "amphp/amp": "^2.2",
     "amphp/byte-stream": "^1",
-    "psr/http-message": "^1"
+    "psr/http-message": "^1",
+    "ekstazi/websocket-common": "^2.0"
   },
   "require-dev": {
     "amphp/php-cs-fixer-config": "dev-master"
@@ -33,12 +34,12 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "ekstazi\\websocket\\stream\\": "src"
+      "ekstazi\\websocket\\client\\": "src"
     }
   },
   "suggest": {
     "ekstazi/websocket-stream-client-implementation": "For websocket client implementation",
-    "ekstazi/websocket-stream-client-amphp": "For amphp websocket-client stream"
+    "ekstazi/websocket-stream-client-amphp": "For amphp websocket-client stream implementation"
   },
   "scripts": {
     "lint": "php vendor/bin/php-cs-fixer --diff  -v fix"
